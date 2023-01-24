@@ -1,47 +1,117 @@
-* { 
-    box-sizing: border-box;
-    margin: 0;
+* {
+    font-family: monospace;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.Profilebubs, #Profilebubs {
+    position: relative;
+    left: -150px;
+    top: 0px;
+    z-index: 1;
+}
+
+.Factsbub, #Factsbub {
+    position: relative;
+    left: 250px;
+    top: -900px;
+    z-index: 2;
+}
+
+#Interestbub {
+    position: relative;
+    left: -200px;
+    top: -1750px;
+    z-index: 3;
+
+}
+
+#Contactbub {
+    position: relative;
+    left: 250px;
+    top: -2450px;
+    z-index: 4;
+}
+
+.nav_links, #navigation {
+    text-align: center;
+    margin-top: 0;
     padding: 0;
-    background-color: slategrey;
-}
-
-li, a { 
-    font-family: "Shadows Into Light", Montserrat;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: monospace;
     font-weight: 500;
-    font-size: 16;
-    color: #edf0f1;
+    font-size: 16px;
     text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 30px 10%;
 }
 
 .nav_links li {
+    list-style: none;
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 60px;
+    color: #edf0f1;
+    
 }
 
 .nav_links li a {
-    transition: all 0.3s ease;
+    transition: all 0.3s ease 0s;
+    color: #edf0f1;s
 }
 
 .nav_links li a:hover {
-    color: lightcoral;
+    color: #0088a9;
 }
 
 button {
     padding: 9px 25px;
-    background-color: bisque;
+    background-color: rgba(0, 136, 169, 1);
     border: none;
-    border-radius: 50px;
+    border-radius: 100px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;s
 }
 
-button:hover {
-    background-color: rgba(0,136,169,0);
+#Profile, .Profile {
+    text-align: center;
+    font-size: 16px;
+}
+
+#Profile, .Profile {
+    position: absolute;
+    left: 500px;
+    top: 400px;
+    z-index: 10;
+
+}
+
+#Facts, .Facts {
+    text-align: center;
+    list-style: lower-alpha;
+    position: absolute;
+    left: 550px;
+    top: 650px;
+    z-index: 10;
+}
+
+#Interest, .Interest {
+    text-align: center;
+    list-style: lower-alpha;
+    position: absolute;
+    left: 500px;
+    top: 550px;
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+#Contact, .Contact {
+    text-align: center;
+    list-style: lower-alpha;
+    position: absolute;
+    left: 550px;
+    top: 650px;
+    z-index: 10;
+
 }
